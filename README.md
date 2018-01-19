@@ -13,6 +13,10 @@ When launched, Lasagna will automatically create all the folders needed for it t
 
 **Your patches go under `/3ds/Lasagna/LayeredFS/<titleid> <gamename>/<patch name>`**.
 
+Note that Lasagna isn't supposed to work just with LayeredFS patch. You can also load locale patches with this.
+
+For this reason, when using a LayeredFS patch that requires using the romfs, you should explicitly put your romfs content in **`/3ds/Lasagna/LayeredFS/<titleid> <gamename>/<patch name>/romfs`**.
+
 ## Building
 
 Lasagna is built using [latest libctru](https://github.com/smealum/ctrulib), [latest citro3d](https://github.com/fincs/citro3d) and [latest pp2d](https://github.com/BernardoGiordano/Lasagna/tree/master/source/pp2d). 
