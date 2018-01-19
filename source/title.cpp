@@ -55,7 +55,7 @@ bool Title::load(u64 _id, FS_MediaType _media, FS_CardType _card)
 	char unique[12] = {0};
 	sprintf(unique, "0x%05X ", (unsigned int)getUniqueId());
 	
-	shortDescription = (char16_t*)smdh->applicationTitles[1].shortDescription;
+	shortDescription = removeForbiddenCharacters((char16_t*)smdh->applicationTitles[1].shortDescription);
 	longDescription = (char16_t*)smdh->applicationTitles[1].longDescription;
 	patchPath = u8tou16("/luma/titles/") + u8tou16(string_format("%016llX", id).c_str());
 	folderPath = u8tou16("/3ds/Lasagna/LayeredFS/") + u8tou16(unique) + shortDescription;
