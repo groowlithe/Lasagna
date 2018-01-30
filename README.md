@@ -8,7 +8,7 @@ LayeredFS patch manager for Luma3DS v7.0+
 
 When launched, Lasagna will automatically create all the folders needed for it to work. The first launch will be slow depending on how much titles you have, due to folders creation.
 
-* `/3ds/luma/titles/<titleid>`
+* `/luma/titles/<titleid>`
 * `/3ds/Lasagna/LayeredFS/<titleid> <gamename>`
 
 **Your patches go under `/3ds/Lasagna/LayeredFS/<titleid> <gamename>/<patch name>`**.
